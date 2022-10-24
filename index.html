@@ -467,8 +467,18 @@
         return Number(qtdRestante)
     })
 
-    var esquerda = myArr[0];
-    var direita = myArr[1];
+    
+    var esquerda = '';
+    var direita = '';
+    
+    if(qtdRestante > 00){
+        esquerda = 0;
+        direita = 0;
+    }else{
+        esquerda = myArr[0];
+        direita = myArr[1];
+    }
+    
     $('.direita').html(direita);
     $('.esquerda').html(esquerda);
     $("#cop").html("COPYRIGHT © OCOWE "+ano)
